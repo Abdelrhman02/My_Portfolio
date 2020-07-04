@@ -1,27 +1,31 @@
+html {
+
+    overflow-x: hidden;
+}
+
 body {
-    font-family: 'Sriracha', cursive;
+    font-family: "Sriracha", cursive;
     margin: 0;
     background-color: rgb(248, 248, 248);
-font-size: 20px;
+    font-size: 20px;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 ul li h1 {
-
     margin: 0px 0px 0px 10px;
-    padding-top:50px ;
+    padding-top: 50px;
     font-size: 50px;
     text-align: center;
-
 }
 
 ul {
-
-    margin: 0px 0px 0px 0px;
+    margin: auto;
     height: 200px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 0;
     width: 70%;
     text-align: center;
+
 }
 
 ul li {
@@ -30,44 +34,32 @@ ul li {
     padding-left: 0px;
 }
 
-
 header {
-
     background-color: black;
     color: aliceblue;
-    box-shadow: 10px 10px 15px 1px rgb(27, 25, 25);
-    ;
 }
 
 span {
-
     font-size: 18px;
     color: rgb(255, 174, 0);
 }
 
 ul a {
-
     text-decoration: none;
-    color: aliceblue
+    color: aliceblue;
 }
 
 .links {
-
     margin-left: 20px;
 }
 
 ul a:hover {
-
     color: rgb(255, 174, 0);
     font-size: 22px;
     transition: 0.5s;
 }
 
-
-
-
 main img {
-
     width: 50%;
     width: 200px;
     height: 200px;
@@ -85,7 +77,6 @@ p {
 
     padding-left: 20px;
     margin-right: 200px;
-
 }
 
 main {
@@ -95,11 +86,8 @@ main {
 }
 
 a img {
-
     width: 50px;
     height: 50px;
-    position: cent;
-
 }
 
 button {
@@ -136,31 +124,35 @@ button {
     transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 
+.logo {
+    display: none;
+    visibility: hidden;
+}
+
+input[type="checkbox"i] {
+    display: none;
+    visibility: hidden;
+}
+
 button:hover {
     opacity: 0.3;
 
-    transition: .5s ease;
+    transition: 0.5s ease;
     backface-visibility: hidden;
-
-
 }
 
 section img {
-
     width: 30%;
     height: 200px;
-
 }
 
 section h1 {
-
     margin-left: auto;
     margin-right: auto;
     color: rgb(255, 174, 0);
 }
 
 section {
-
     margin-top: 1.5em;
     margin-left: 5%;
     border-bottom: 3px solid rgb(255, 174, 0);
@@ -169,68 +161,59 @@ section {
 }
 
 section a {
-
     padding-left: 2%;
 }
 
 section a:hover {
     opacity: 0.3;
 
-    transition: .5s ease;
+    transition: 0.5s ease;
     backface-visibility: hidden;
 }
 
 footer {
-
     display: inline-block;
     margin-top: 7em;
     width: 40%;
     margin-left: 35%;
     margin-bottom: 5em;
-
 }
-
 
 footer a {
-
     margin: 0 0 0 50px;
-
 }
+
 .skill {
     text-align: center;
-    }
-    .skill h1{
-    
-        padding: 0;
-    }
-#sectionpage h1{
-    text-align: center    ;
-}
-.img-logo:hover{
-
-opacity: 0.5;
-
 }
 
+.skill h1 {
+    padding: 0;
+}
 
+#sectionpage h1 {
+    text-align: center;
+}
 
+.img-logo:hover {
+    opacity: 0.5;
+}
 
+.img-logo {
+
+    transition: opacity 0.5s;
+}
 
 @media only screen and (max-width: 1200px) {
-    
-    
-    
     main {
-    padding: 2.5% 5% 5% 5%;
-    background-color: rgb(27, 25, 25);
-    color: blanchedalmond;
-}
+        padding: 2.5% 5% 5% 5%;
+        background-color: rgb(27, 25, 25);
+        color: blanchedalmond;
+    }
 
     main img {
-
-
         width: 40%;
-        height: 50% ;
+        height: 50%;
         border-radius: 50%;
         margin-left: 30%;
         margin-right: 30%;
@@ -243,68 +226,77 @@ opacity: 0.5;
         border-left: 2px solid rgb(255, 174, 0);
         border-right: 2px solid rgb(255, 174, 0);
         padding-right: 20px;
-    
+
         padding-left: 20px;
         margin-right: 11%;
         margin-left: 9%;
-
     }
-    section img {
 
+    section img {
         width: 30%;
-        height:30%;
-    
+        height: 30%;
     }
-    footer {
 
+    footer {
         display: inline-block;
         margin-top: 7em;
         margin-left: 35%;
         margin-right: 35%;
         margin-bottom: 5em;
-        
-    
     }
+
     footer a {
-
         margin: 0 0 0 10px;
-    
     }
-    section h1 {
 
+    section h1 {
         margin-left: 30%;
         margin-right: 30%;
         color: rgb(255, 174, 0);
         font-size: 24px;
-        padding-left: 10%;
-        
-}
-
-
-
-}
-@media only screen and (max-width: 750px) {
-    
-    body{
-
-        font-size: 16px;
     }
-    
-    main {
-    padding: 2.5% 5% 5% 5%;
-    background-color: rgb(27, 25, 25);
-    color: blanchedalmond;
+
+    ul {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    button {
+        margin-left: 25%;
+
+    }
+
+    h2 {
+        font-size: large;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+    html {
+        max-width: 768px;
+
+    }
+
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        max-width: 768px;
+    }
+
+    main {
+        padding: 0;
+        background-color: rgb(27, 25, 25);
+        color: blanchedalmond;
+    }
 
     main img {
-
-
         width: 40%;
-        height: 50% ;
+        height: 50%;
         border-radius: 50%;
         margin-left: 30%;
         margin-right: 30%;
-        
     }
 
     p {
@@ -314,97 +306,156 @@ opacity: 0.5;
         border-left: 2px solid rgb(255, 174, 0);
         border-right: 2px solid rgb(255, 174, 0);
         padding-right: 20px;
-    
+
         padding-left: 20px;
         margin-right: 11%;
         margin-left: 9%;
-
     }
+
     section img {
-
         width: 60%;
-        height:60%;
-    
+        height: 60%;
     }
-    footer {
 
+    footer {
         display: inline-block;
         margin-top: 7em;
         margin-left: 35%;
         margin-right: 35%;
         margin-bottom: 5em;
-        
-    
     }
+
     footer a {
-
         margin: 0 0 0 10px;
-    
     }
-    section h1 {
 
+    section h1 {
         margin-left: 30%;
         margin-right: 30%;
         color: rgb(255, 174, 0);
         font-size: 24px;
         padding-left: 10%;
-    
-}
-
-ul li h1 {
-
-    margin: 0px 0px 0px 10px;
-    width:100%;
-}
-
-ul {
-
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 15px 5px;
-
-}
-
-ul li {
-    margin: 0px 5px;
-    padding-left: 0px;
-}
-
-
-header {
-
-    background-color: black;
-    color: aliceblue;
-}
-
-span {
-
-    font-size: 18px;
-    color: rgb(255, 174, 0);
-}
-
-ul a {
-
-    text-decoration: none;
-    color: aliceblue
-}
-
-.links {
-
-    margin-left: 20px;
-}
-
-ul a:hover {
-
-    color: rgb(255, 174, 0);
-    font-size: 22px;
-    transition: 0.5s;
-}
-#sectionpage a {
-
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
     }
-    
 
+    ul li h1 {
+        margin: 0px 0px 0px 10px;
+        width: 100%;
+        min-width: 500px;
+
+    }
+
+    ul {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 15px 5px;
+    }
+
+    ul li {
+        margin: 0px 5px;
+        padding-left: 0px;
+    }
+
+    header {
+        background-color: black;
+        color: aliceblue;
+    }
+
+    span {
+        font-size: 18px;
+        color: rgb(255, 174, 0);
+    }
+
+    ul a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .links {
+        margin-left: 20px;
+    }
+
+    ul a:hover {
+        color: rgb(255, 174, 0);
+        font-size: 22px;
+        transition: 0.5s;
+    }
+
+    #sectionpage a {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    button {
+        margin-bottom: 2em;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .logo {
+        visibility: visible;
+        display: inline;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+
+
+
+    }
+
+
+    p {
+        margin-right: 10%;
+        margin-left: 10%;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    p {
+        font-size: small;
+        float: center;
+        margin: 0;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin-left: 2.2%;
+        border: none;
+
+    }
+
+    #sectionpage h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .skill h1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .img-logo {
+
+        height: 30px;
+        width: 30px;
+
+    }
+
+    footer {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+    }
 }
